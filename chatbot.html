@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Basic Chatbot Static Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./chatbot.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+    </style>
   </head>
   <body>
-    <main>
-        <h1>Welcome to a simple static website showing chatbot use! </h1>  
-    </main>
-    <iframe
-      src="https://web.powerva.microsoft.com/environments/953fce05-823d-4e86-a849-6ff25280390b/bots/new_bot_18cf8ce2b0ee4bf2ba93532d3e05af80/webchat"
-      frameborder="0"
-      style="width: 500px; height: 500px"
-    ></iframe>
+    <div id="container">
+      <div id="content">
+        <div id="about">
+          <h1>
+            <div style="float: left; margin-bottom: 20px">Venue Bot</div>
+            <div class="stage">
+              <div class="pyramid3d">
+                <div class="triangle side1"></div>
+                <div class="triangle side2"></div>
+                <div class="triangle side3"></div>
+                <div class="triangle side4"></div>
+              </div>
+            </div>
+          </h1>
+          <h3 style="clear: both" class="subhead">
+            This is a simple static website to showcase the use of a custom
+            embedded chatbot via Azure Virtual Agent.
+          </h3>
+          <p id="pleft">
+            The chatbot is based around concerts and venues in Las Vegas, NV and
+            where to get additional information along with OOTB chatbot responses
+            from Azure Virtual Agent.
+          </p>
+          <p id="pright">
+            <iframe
+              src="https://web.powerva.microsoft.com/environments/953fce05-823d-4e86-a849-6ff25280390b/bots/new_bot_18cf8ce2b0ee4bf2ba93532d3e05af80/webchat"
+              frameborder="0"
+              style="width: 500px; height: 500px; background-color: lightgrey;"
+            ></iframe>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
